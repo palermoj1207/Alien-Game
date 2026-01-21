@@ -46,16 +46,11 @@ class AlienInvasion:
                     # Move the ship to the right
                     self.ship.moving_right = True
                     # self.link.moving_right = True
+                    # self.link.moving_up = True
                 elif event.key == pygame.K_LEFT:
                     # Move the ship to the left
                     self.ship.moving_left = True
                     # self.link.moving_left = True
-                elif event.key == pygame.K_UP:
-                    # Move link up
-                    # self.link.moving_up = True
-                elif event.key == pygame.K_DOWN:
-                    # Move link down
-                    # self.link.moving_down = True
             elif event.type == pygame.KEYUP:
                 if event.key == pygame.K_RIGHT:
                     # Stop moving the ship
@@ -65,12 +60,6 @@ class AlienInvasion:
                     # Stop moving the ship
                     self.ship.moving_left = False
                     # self.link.moving_left = False
-                elif event.key == pygame.K_UP:
-                    # Move link up
-                    # self.link.moving_up = False
-                elif event.key == pygame.K_DOWN:
-                    # Move link down
-                    # self.link.moving_down = False
 
     
     def _update_screen(self):
@@ -91,3 +80,7 @@ if __name__ == "__main__":
     # Make a game instance, and run the game.
     ai = AlienInvasion()
     ai.run_game()
+
+
+
+
